@@ -1,0 +1,16 @@
+{
+  "name": "base-meteor-react-stack",
+  "private": true,
+  "scripts": {
+    "start": "meteor --port 3000",
+    "test": "meteor test --driver-package practicalmeteor:mocha --port 3005"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.1.0",
+    "react-addons-pure-render-mixin": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  }
+}
