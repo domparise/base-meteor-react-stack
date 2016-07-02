@@ -5,7 +5,6 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Items } from '../api/items.js';
  
 import Item from './Item.jsx'; 
-import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 
 // App component - represents the whole app
 class App extends Component {
@@ -35,8 +34,6 @@ class App extends Component {
     return (
       <div className="container">
         <header>
-
-          <AccountsUIWrapper />
 
           <h1>Items in box ({this.props.items.length})</h1>
 

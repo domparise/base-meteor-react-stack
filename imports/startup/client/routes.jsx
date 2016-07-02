@@ -2,18 +2,18 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import { App } from '../../ui/layouts/app.jsx';
-import { Index } from '../../ui/components/index.jsx';
+import { Layout } from '../../ui/Layout.jsx';
+import { Index } from '../../ui/Index.jsx';
 
-import { One } from '../../ui/pages/one.jsx';
-import { Two } from '../../ui/pages/two.jsx';
-import { NotFound } from '../../ui/pages/not-found.jsx';
-import { Hello } from '../../ui/pages/hello.jsx';
+import { One } from '../../ui/One.jsx';
+import { Two } from '../../ui/Two.jsx';
+import { NotFound } from '../../ui/NotFound.jsx';
+import { Hello } from '../../ui/Hello.jsx';
 
 Meteor.startup( () => {
   render(
     <Router history={ browserHistory }>
-      <Route path="/" component={ App }>
+      <Route path="/" component={ Layout }>
         <IndexRoute component={ Index } />
         <Route path="/one" component={ One } />
         <Route path="/two" component={ Two } />
